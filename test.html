@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Circular Images</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .separator {
+            display: flex;
+            align-items: center;
+            flex-direction: column; /* Align items vertically */
+            margin-top: 20px; /* Add margin to separate the heading from the images */
+        }
+
+        .circle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .circle {
+            width: 250px; /* Increased circle size */
+            height: 250px; /* Increased circle size */
+            background-color: #ccc;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px; /* Adjust the margin to control the separation */
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the entire image is visible inside the circle */
+            border-radius: 50%;
+        }
+
+        .separator-text {
+            padding: 0 20px;
+            color: #555;
+            font-size: 24px; /* Adjust the font size of the heading */
+            margin-top: 20px; /* Add margin to separate the text from the circles */
+        }
+
+        /* Styles for the text and buttons */
+        .text-above-images {
+            font-size: 18px;
+            margin: 10px 0 25px 95px; /* Add margin between text and images */
+        }
+
+        .text-below-images {
+            font-size: 18px;
+            margin-top: 20px; /* Add margin between text and buttons */
+        }
+
+        .buttons {
+            display: flex;
+            margin-top: 10px; /* Add margin between buttons and text */
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 5px 30px 70px;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for the gray line container */
+        .line-container {
+            display: flex;
+            flex-direction: column; /* Change to vertical direction */
+            align-items: center; /* Center items horizontally */
+            height: 100%; /* Ensure the line container takes up the full height */
+        }
+
+        /* Style for the gray line segments */
+        .line-segment {
+            width: 2px; /* Adjust width to control the vertical line's thickness */
+            height: 150px; /* Adjust the height as needed */
+            background-color: #ccc;
+            margin: 10px 0 20px; /* Add margin to separate the line segments vertically */
+        }
+
+        /* Style for the "OR" text */
+        .or-text {
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        /* Adjust the margin for the right text */
+        .text-above-images:last-child {
+            margin-bottom: 20px; /* Add margin between text and buttons */
+            margin-top: 20px; /* Add top margin to match the spacing of the left text */
+        }
+    </style>
+</head>
+<body>
+    <h1>Get Started with Amazon Mechanical Turk</h1>
+    <div class="separator">
+        <div class="circle-container">
+            <div> 
+                <div class="circle">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqCvO1oqXc_w2fo4-fqglgtdhXJu-ey3S8ffzGjeFniZ-L6c6feFv_JWhoX72FF8m3C_E&usqp=CAU" alt="Image 1">
+                </div>
+                <div class="text-above-images">Create Tasks</div>
+                <div class="buttons">
+                    <button>Request a Requester Account</button>
+                </div>
+            </div>
+            <div class="line-container">
+                <div class="line-segment"></div>
+                <div class="or-text">OR</div> <!-- "OR" text in the middle of the line segments -->
+                <div class="line-segment"></div>
+            </div>
+            <div>
+            <div class="circle">
+                <img src="https://media.istockphoto.com/id/1025332648/photo/female-hand-holding-piggy-bank-save-money-and-financial-investment.webp?b=1&s=170667a&w=0&k=20&c=VlRGF-lewSr6IQbz99lL7oPmpUfO-R5hdsC5Hh6CP70=" alt="Image 1">
+            </div>
+            <div class="text-above-images">Make Money</div>
+            <div class="buttons">
+                <button>Request a Worker Account</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
